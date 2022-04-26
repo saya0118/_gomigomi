@@ -1,0 +1,14 @@
+:root {
+  --color-white: #eeeee4;
+  --color-blue: #50929d;
+  --color-indigo:#11303fde;
+  --color-brown: #644434;
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.App{
+  background-color: red;
+}
