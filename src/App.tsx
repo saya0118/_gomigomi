@@ -4,6 +4,7 @@ import { Page } from "./components/Page";
 import "./App.css";
 
 const App = () => {
+  console.log(process.env)
   return (
     <div className="App">
       <Header />
