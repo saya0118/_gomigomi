@@ -5,13 +5,12 @@ export const Header = () => {
   const [image, setImage] = useState<any>([]);
   const api: string | undefined = process.env.REACT_APP_ACCESS_KEY
   const url = `https://api.unsplash.com/search/photos?query=travel&client_id=${api}`;
-  console.log(process.env)
 
   useEffect(() => {
     axios.get(url).then((res) => {
       const data = res.data.results;
-      var randomId = Math.floor(Math.random() * data.length);
-      setImage(data[randomId]);
+      var randomIndex = Math.floor(Math.random() * data.length);
+      setImage(data[randomIndex]);
     });
   }, []);
 
